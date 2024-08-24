@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Repositório do curso Cypress Playground da Escola Talking About Testing.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress open"
   },
   "keywords": [
     "Cypress Playground",
@@ -11,5 +11,8 @@
     "Talking About Testing"
   ],
   "author": "Walmyr <wlsf82@gmail.com> (https://walmyr.dev/)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.13.3"
+  }
 }
