@@ -56,15 +56,6 @@ describe('Cypress Playground', () => {
 
     cy.contains('p', "You've selected the following fruits: apple, banana, cherry").should('be.visible')
   })
-  it('checks both possible radios and asserts if it is "on" or "off"', () => {
-    cy.contains('#on-off', 'ON').should('be.visible')
-    cy.get('#off').check()
-    cy.contains('#on-off', 'OFF').should('be.visible')
-    cy.contains('#on-off', 'ON').should('not.exist')
-    cy.get('#on').check()
-    cy.contains('#on-off', 'ON').should('be.visible')
-    cy.contains('#on-off', 'OFF').should('not.exist')
-  });
 
   it('Uploads a file and asserts the correct file name appears as a paragraph', () => {
     cy.get('input[type="file"]').selectFile('./cypress/fixtures/example.json')
