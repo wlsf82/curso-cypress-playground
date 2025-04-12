@@ -57,7 +57,7 @@ describe('Cypress Playground', () => {
     cy.contains('p', "You've selected the following fruits: apple, banana, cherry").should('be.visible')
   })
 
-  it('Uploads a file and asserts the correct file name appears as a paragraph', () => {
+  it('uploads a file and asserts the correct file name appears as a paragraph', () => {
     cy.get('input[type="file"]').selectFile('./cypress/fixtures/example.json')
     cy.contains('p', "The following file has been selected for upload: example.json").should('be.visible')
   });
